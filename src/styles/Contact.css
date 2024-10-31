@@ -1,0 +1,62 @@
+/* src/styles/Contact.css */
+
+.contact {
+    padding: 100px 20px;
+    background-color: var(--black);
+  }
+  
+  .contact h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: var(--gold);
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .contact form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .contact form input,
+  .contact form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: var(--dark-gray);
+    border: none;
+    color: var(--white);
+    border-radius: 5px;
+  }
+  
+  .contact form input::placeholder,
+  .contact form textarea::placeholder {
+    color: #bbb;
+  }
+  
+  .contact form button {
+    padding: 15px 30px;
+    background-color: var(--gold);
+    border: none;
+    color: var(--black);
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+  }
+  
+  .contact form button:hover {
+    background-color: #b8860b;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .contact h2 {
+      font-size: 2rem;
+    }
+  
+    .contact form {
+      width: 100%;
+    }
+  }
+  

@@ -1,0 +1,108 @@
+/* src/styles/Services.css */
+
+/* Já temos a classe .service-item atualizada */
+.service-item {
+    scroll-snap-align: start;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--black);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .service-item i {
+    font-size: 80px;
+    color: var(--gold);
+    margin-bottom: 20px;
+  }
+  
+  .service-item h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  .service-item p {
+    font-size: 1rem;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    padding: 0 20px;
+  }
+  
+  .understand-btn {
+    padding: 15px 30px;
+    background-color: var(--gold);
+    color: var(--black);
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: default;
+    margin-bottom: 20px;
+  }
+  
+  .option-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .option-buttons button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-sim {
+    background-color: var(--gold);
+    color: var(--black);
+  }
+  
+  .btn-nao {
+    background-color: var(--red);
+    color: var(--white);
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .services {
+      position: relative;
+      width: 100%;
+      min-height: 100vh; /* Garantir que os serviços ocupem a altura total da viewport */
+      overflow: hidden;
+    }
+    
+    .service-container {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+    
+    .service-item i {
+      font-size: 60px;
+    }
+  
+    .service-item h3 {
+      font-size: 1.5rem;
+    }
+  
+    .service-item p {
+      font-size: 0.9rem;
+    }
+  
+    .option-buttons {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .option-buttons button {
+      width: 100%;
+    }
+  }
+  

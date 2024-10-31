@@ -1,0 +1,96 @@
+/* src/styles/Header.css */
+
+header {
+  width: 100%;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  color: var(--gold);
+}
+
+/* Menu de navegação */
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: var(--gold);
+}
+
+/* Menu hambúrguer para mobile */
+.menu-toggle {
+  display: none;
+  font-size: 30px;
+  color: var(--white);
+  cursor: pointer;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  /* Mostrar o menu-toggle em mobile */
+  .menu-toggle {
+      display: block;
+  }
+
+  /* Esconder o menu de navegação até ser ativado */
+  nav {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      top: 70px; /* Ajuste de acordo com o tamanho do header */
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  /* Menu ativo quando clicado */
+  nav.active {
+      display: flex;
+  }
+
+  /* Menu em coluna no mobile */
+  nav ul {
+      flex-direction: column;
+      width: 100%;
+  }
+
+  /* Ajuste de espaçamento no mobile */
+  nav ul li {
+      margin: 10px 0;
+      text-align: center;
+  }
+
+  nav ul li a {
+      font-size: 18px;
+  }
+}
+
+/* Para garantir que o menu não esconda outros elementos no desktop */
+@media (min-width: 769px) {
+  nav {
+      display: flex !important; /* Menu deve ser visível no desktop */
+  }
+}
