@@ -1,4 +1,5 @@
 /* src/components/Footer.css */
+@import url(../../css/variables.css);
 
 footer {
     background-color: var(--black);

@@ -2,10 +2,10 @@
 import React, { useState, useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import '../styles/ServiceItem.css';
+import './ServiceItem.css';
 
 function ServiceItem({ index, service, handleResponse }) {
-  const [buttonText, setButtonText] = useState('Deu pra entender?');
+  const [buttonText, setButtonText] = useState('Deu para entender?');
   const [buttonDisabled, setButtonDisabled] = useState(false);
 
   const controls = useAnimation();

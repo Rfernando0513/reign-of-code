@@ -1,5 +1,5 @@
 /* src/styles/ServiceItem.css */
-
+@import url(../../css/variables.css);
 .service-item {
     width: 100%;
     height: 100vh;

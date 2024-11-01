@@ -1,5 +1,7 @@
 /* src/styles/About.css */
 
+@import url(../css/variables.css);
+
 .about {
     padding: 100px 20px;
     background-color: var(--black);

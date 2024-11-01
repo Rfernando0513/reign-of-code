@@ -1,4 +1,5 @@
 /* src/styles/Hero.css */
+@import url(../css/variables.css);
 
 .hero {
     height: 100vh;

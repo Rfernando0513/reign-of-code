@@ -1,4 +1,5 @@
 /* src/styles/Header.css */
+@import url(../../css/variables.css);
 
 header {
   width: 100%;

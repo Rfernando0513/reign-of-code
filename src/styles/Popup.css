@@ -1,4 +1,5 @@
 /* src/styles/Popup.css */
+@import url(../css/variables.css);
 
 .popup-form {
     display: flex;

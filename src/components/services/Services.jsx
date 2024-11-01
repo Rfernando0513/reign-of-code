@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ServiceItem from './ServiceItem';
-import Popup from './Popup';
+import Popup from '../Popup';
 // import '../styles/Services.css';
 
 function Services() {

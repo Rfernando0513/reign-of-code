@@ -1,4 +1,5 @@
 /* src/styles/Contact.css */
+@import url(../css/variables.css);
 
 .contact {
     padding: 100px 20px;
